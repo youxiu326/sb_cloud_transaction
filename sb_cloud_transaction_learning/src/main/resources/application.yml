@@ -1,0 +1,35 @@
+server:
+  port: 7008
+spring:
+  application:
+    name: sb_cloud_transaction_learning
+  datasource:
+    url: jdbc:mysql://youxiu326.xin:3306/xc_learning?characterEncoding=utf-8
+    username: youxiu326
+    password: zz123456.ZZ
+    driver-class-name: com.mysql.jdbc.Driver
+#rabbitmq配置
+  rabbitmq:
+    host: youxiu326.xin
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirms: true
+    virtual-host: /
+  thymeleaf:
+    cache: false
+  jpa:
+    show-sql: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+
+
+#eureka:
+#  client:
+#    registerWithEureka: true #服务注册开关
+#    fetchRegistry: true #服务发现开关
+#    serviceUrl: #Eureka客户端与Eureka服务端进行交互的地址
+#      defaultZone: http://youxiu326.xin:8761/eureka/
+
